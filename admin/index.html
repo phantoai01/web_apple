@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="" href="../public/images/favicon.ico" />
+
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link boostrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="../public/css/color.css">
+    <link rel="stylesheet" href="../public/css/admin/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="left">
+                <a href="" class="bars">
+                    <i class="fa fa-bars ml-4" aria-hidden="true"></i>
+                </a>
+                <a href="" class="logo">
+                    BẢNG ĐIỀU KHIỂN
+                </a>
+            </div>
+            <div class="right">
+                <div class="search">
+                    <img src="../public/images/search.svg" alt="" width="20px" data-toggle="modal"
+                        data-target="#myModal">
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog box-search-header">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Tìm kiếm chức năng</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="#" method="#">
+                                        <input type="search" required>
+                                        <button type="submit">Tìm kiếm</button>
+                                    </form>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bell">
+                    <img src="../public/images/bell.svg" alt="" width="20px">
+                </div>
+
+                <div class="dropdown">
+                    <div class="btn dropdown-toggle img-admin" data-toggle="dropdown">
+                        <img src="../public/images/layout/Apple-Store-Offline-Banner.png" alt="">
+
+                    </div>
+                    <div class="dropdown-menu drop-down-profile">
+                        <a class="dropdown-item" href="#">Hồ sơ</a>
+                        <a class="dropdown-item" href="#">Đổi mật khẩu</a>
+                        <a class="dropdown-item link-logout" href="#"> Đăng xuất</a>
+                        <div class=" btn dropdown-toggle"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <main>
+            <aside class="panel">
+                <div class="dropdown-toggle text-primary"></div>
+                <div class="panel-content">
+                    <div class="logo-panel">
+                        <a href="../index.html">
+                            <i class="fa fa-apple pr-2" aria-hidden="true"></i>
+                            <span class="panel-txt">Apple Store</span>
+                        </a>
+                    </div>
+                    <div class="panel-content-detail">
+                        <!-- thống kê -->
+                        <a href="#statistical">
+                            <div class="img-statis">
+                                <img src="../public/images/layout/chart.svg" alt="">
+                            </div>
+                            <span class="panel-txt">Thống kê sản phẩm</span>
+                        </a>
+                        <a href="#Categories">
+                            <div class="img-statis">
+                                <img src="../public/images/layout/cate.svg" alt="">
+                            </div>
+                            <span class="panel-txt">Danh mục sản phẩm</span>
+                        </a>
+                        <a href="#Products">
+                            <div class="img-statis">
+                                <img src="../public/images/layout/packing.svg" alt="">
+                            </div>
+                            <span class="panel-txt">Sản phẩm</span>
+                        </a>
+                        <a href="#client">
+                            <div class="img-statis">
+                                <img src="../public/images/layout/customer.svg" alt="">
+                            </div>
+                            <span class="panel-txt">Khách hàng</span>
+                        </a>
+                        <a href="#comment">
+                            <div class="img-statis">
+                                <img src="../public/images/layout/comments.svg" alt="">
+                            </div>
+                            <span class="panel-txt"> Bình luận</span>
+                        </a>
+                        <a href="#comment">
+                            <div class="img-statis">
+                                <img src="../public/images/layout/user.svg" alt="">
+                            </div>
+                            <span class="panel-txt"> Admin</span>
+                        </a>
+                        <a href="#comment">
+                            <div class="img-statis">
+                                <img src="../public/images/layout/comments.svg" alt="">
+                            </div>
+                            <span class="panel-txt">Vận chuyển</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            <!-- end panel -->
+            <div class="box-content">
+                <!-- thống kê -->
+                <div class="chart">
+                    <div class="title">
+                        <span class="text-secondary">THỐNG KÊ</span>
+                        <h4 class="text-light">Doanh thu của năm 2021</h4>
+                    </div>
+                    <canvas id="myChart" width="" height="100"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <div class="back-to-top" title="Lên đầu trang"><i class="fa fa-chevron-up text-dark" aria-hidden="true"></i></div>
+    <!--  -->
+
+    <!-- link jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- link lib chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="../public/js/chart.js"></script>
+    <!-- link js -->
+    <script src="../public/js/scroll.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+/* ===== fonts =====*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+.wrapper{
+    border-top: 2px solid var(--blue);
+    font-family: 'Poppins', sans-serif !important;
+    height: 2000px;
+}
+body{
+    background: var(--bg-dark);
+}
+header{
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 30px;
+}
+header .left{
+    display: flex;
+    align-items:center ;
+    column-gap: 30px;
+}
+header .left a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 16px ;
+}
+header .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+.box-search-header{
+    max-width: 600px !important;
+    background: #000;
+}
+.co-dinh-menu{
+   position: fixed;
+    top: 22px;
+    left: 30px;
+}
+.img-admin img{
+    width: 30px ;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+.logo{
+    font-size: 20px;
+}
+.logo i:hover{
+    color:#333;
+}
+header .dropdown{
+    position: relative;
+
+}
+header .dropdown-toggle{
+    color:#fff;
+}
+.drop-down-profile{
+    position: absolute;
+    left: -33px !important;
+    border-radius: 2px !important;
+    font-size: 13px !important;
+    line-height: 30px;
+}
+.drop-down-profile> .dropdown-toggle{
+    width: 3px;
+    position: inherit;
+    top:-22px;
+    right:18px;
+    transform: rotate(180deg);
+
+}
+.link-logout{
+    border-top: 1.5px solid rgb(223, 223, 223);
+}
+/* ======end header===== */
+.panel{
+    width: 83px;
+    height: 83vh;
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    background: var(--blue);
+    border-radius: 5px;
+    padding: 15px 0;
+    overflow-y: scroll;
+    transition: all ease-in-out .3s;
+  
+    z-index: 99;
+    
+}
+.panel-content span{
+    animation-name: fadeOut;
+    animation-duration: .5s;
+    visibility: hidden;
+}
+
+/* design thanh cuộn */
+::-webkit-scrollbar{
+    width: 10px;
+}
+.panel::-webkit-scrollbar-thumb{
+    background: rgb(138, 137, 137);
+    border-radius: 5px;
+    visibility: hidden;
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(138, 137, 137);
+    border-radius: 5px;
+    
+}
+/* hover scroll */
+body:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+.panel:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+.panel:hover .panel-txt{
+    animation-name: fadeIn;
+    animation-duration: .5;
+    transition: all ease-in-out .3s;
+    visibility: visible;
+}
+.panel:hover {
+    width: 250px;
+    transition: all ease-in-out .3s;
+}
+@keyframes fadeIn{  /* định nghĩa  animation*/
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+.panel .dropdown-toggle{
+    transform: rotate(180deg);
+    position: inherit;
+    left: 56px;
+    top: 55px;
+}
+.logo-panel{
+    margin: 0 29px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.logo-panel a,i{
+    color:#fff;
+    text-decoration: none;
+    font-size: 17px;
+    white-space: nowrap;
+
+}
+.logo-panel i{
+   font-size: 30px;
+}
+.logo-panel i:hover{
+    color:#000;
+}
+/* thống kê */
+.panel-content-detail{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.panel-content-detail img{
+    width: 23px;
+}
+.panel-content-detail a{
+    padding: 10px 30px;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    column-gap: 23px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.panel-content-detail a:hover{
+    color:#ccc;
+}
+/*  ========end panel=========*/
+.box-content{
+    margin-left: 134px;
+    margin-top: 13px;
+
+}
+.chart{
+    background: var(--item-dark);
+    border-radius: 5px;
+    padding:20px 15px;
+
+}
+.back-to-top{
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e7e7e7;
+    box-shadow: 1px 1px 3px #333;
+    opacity: 0.6;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+	transform: translateX(300%);
+	opacity: .6;
+    transition:0.5s;
+    z-index: 10;
+}
+.back-to-top.hien-ra{
+	transform:translateX(-50%);
+	
+}

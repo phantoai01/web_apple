@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="" href="./public/images/favicon.ico" />
+
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link boostrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/lightslider.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <header>
+            <div class="header-top">
+                <ul class="container menu-main">
+                    <li><a href="">
+                            <i class="fa fa-apple" aria-hidden="true"></i>
+                        </a></li>
+                    <li><a href="./views/product_lists.html">Store</a></li>
+                    <li><a href="">Mac</a></li>
+                    <li><a href="">iPad</a></li>
+                    <li><a href="">iPhone</a></li>
+                    <li><a href="">Watch</a></li>
+                    <li><a href="">TV</a></li>
+                    <li><a href="">Music</a></li>
+                    <li><a href="./views/support.html">Support</a></li>
+                    <li><a href="./admin/index.html">Admin</a></li>
+                    <li>
+                        <div class="search">
+                            <img src="./public/images/search.svg" alt="" width="18px" data-toggle="modal"
+                                data-target="#myModal">
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog box-search-header">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Tìm kiếm sản phẩm</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form action="#" method="#">
+                                                <input type="search" required>
+                                                <button type="submit">Tìm kiếm</button>
+                                            </form>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <li>
+                        <a href="#login" class="icon-login"><i class="fa fa-sign-in" aria-hidden="true"
+                                title="Login"></i>
+                        </a>
+                        <div class="nav-login">
+                            <!-- if already logged in -->
+                            <a href="#info_acc"><i class="fa fa-user-circle-o mr-2" aria-hidden="true"></i>
+                                Hồ sơ</a>
+                            <a href="#change_pass">Đổi mật khẩu</a>
+                            <a href="./views/sign_in.html">Đăng nhập</a>
+                            <a href="./views/sign_up.html">Đăng kí</a>
+                            <!-- if already logged in -->
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- end header-top -->
+            <div id="ribbon" class="carousel slide" data-ride="carousel">
+                <!-- The slideshow -->
+                <div class="carousel-inner" style="width:75%;overflow: hidden; margin: 0 auto;">
+                    <div class="carousel-item active">
+                        <div class="content-text-carousel text-center">
+                            Tiết kiệm trên iPhone mới của bạn với các ưu đãi đặc biệt của nhà cung cấp dịch vụ tại
+                            Apple. <a href=""> Tìm giao dịch của bạn<i class="fa fa-angle-right pl-2"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="content-text-carousel text-center">
+                            Tiết kiệm thời gian đặt hàng trước iPhone. Hoàn thành công việc chuẩn bị ngay bây giờ, sau
+                            đó tăng tốc độ thanh toán trên
+                            9.17.<a href="">Khám phá<i class="fa fa-angle-right pl-2" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev ml-5" href="#ribbon" data-slide="prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                </a>
+                <a class="carousel-control-next mr-5" href="#ribbon" data-slide="next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                </a>
+
+            </div>
+            <!-- end silder ribon -->
+        </header>
+        <!-- end header -->
+        <main>
+            <section class="banner">
+                <div class="banner-item">
+                    <h1>Store. <span class="text-hightlight-banner">Cách tốt nhất để mua sản phẩm bạn yêu thích.</span>
+                    </h1>
+                </div>
+                <div class="banner-item2">
+                    <div class="item mb-3">
+                        <div class="pr-2">
+                            <img src="./public/images/layout/store-header-specialist-icon-202108.jpg" alt=""
+                                width="35px;">
+                        </div>
+                        <div class=""">
+                            <div style=" font-weight: 600;">Cần trợ giúp mua sắm</div>
+                        <a href="">Hỏi chuyên gia</a>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pr-2">
+                        <img src="./public/images/layout/app-store.png" alt="" width="35px">
+                    </div>
+                    <div class=""">
+                            <div style=" font-weight: 600;">Ghé thăm Apple Store</div>
+                    <a href="">Tìm cửa hàng gần nhất</a>
+
+                </div>
+
+            </section>
+            <!-- end banner -->
+            <section class="slider-product">
+                <a href="#" class="item">
+                    <img src="./public/images/products/store-card-13-mac-nav-202108.jpg" alt="" width="100%">
+                    <p>Mac</p>
+                </a>
+                <a href="#" class="item">
+                    <img src="./public/images/products/store-card-13-airpods-nav-202108.jpg" alt="" width="100%">
+                    <p>Airpod</p>
+                </a>
+                <a href="#" class="item">
+                    <img src="./public/images/products/store-card-13-ipad-nav-202108.jpg" alt="" width="100%">
+                    <p>iPad</p>
+                </a>
+                <a href="#" class="item">
+                    <img src="./public/images/products/store-card-13-airtags-nav-202108.jpg" alt="" width="100%">
+                    <p>AirTag</p>
+                </a>
+                <a href="#" class="item">
+                    <img src="./public/images/products/store-card-13-iphone-nav-202109_GEO_US.jpg" alt="" width="100%">
+                    <p>iPhone</p>
+                </a>
+                <a href="#" class="item">
+                    <img src="./public/images/products/store-card-13-watch-nav-202108.jpg" alt="" width="100%">
+                    <p>Apple Watch</p>
+                </a>
+                <a href="#" class="item">
+                    <img src="./public/images/products/store-card-13-homepod-mini-nav-202108.jpg" alt="" width="100%">
+                    <p>HomePod mini</p>
+                </a>
+                <a href="#" class="item">
+                    <img src="./public/images/products/store-card-13-appletv-nav-202108.jpg" alt="" width="100%">
+                    <p>Apple TV</p>
+                </a>
+                </ul>
+
+            </section>
+            <!-- end slider top -->
+            <div class="featured-products">
+                <div class="featured-products-title mb-4">
+                    <h3>Xem nhiều. <span class="text-secondary">Xin vui lòng xem những gì hoặc một cái gì đó.</span></h3>
+                </div>
+                <div class="featured-products-content">
+                    <ul id="content-slider" class="content-slider">
+                        <li>
+                            <a href="./views/product_details.html" class="item">
+                                <div class="content-text">
+                                    <span class="text-secondary">CÒN HÀNG</span>
+                                    <h3>iPhone 13 ProMax</h3>
+                                    <p>Trả góp từ $ 999,00 hoặc $ 41,62 / tháng mỗi tháng trong 24 tháng. trước khi trade-inFootnote *</p>
+                                </div>
+                                <img src="./public/images/products/ip13.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#feature-prd" class="item">
+                                <div class="content-text">
+                                    <span class="text-secondary">CÒN HÀNG</span>
+                                    <h3>iPhone 13 ProMax</h3>
+                                    <p>Trả góp từ $ 999,00 hoặc $ 41,62 / tháng mỗi tháng trong 24 tháng. trước khi trade-inFootnote *</p>
+                                </div>
+                                <img src="./public/images/products/ip13.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#feature-prd" class="item">
+                                <div class="content-text">
+                                    <span class="text-secondary">CÒN HÀNG</span>
+                                    <h3>iPhone 13 ProMax</h3>
+                                    <p>Trả góp từ $ 999,00 hoặc $ 41,62 / tháng mỗi tháng trong 24 tháng. trước khi trade-inFootnote *</p>
+                                </div>
+                                <img src="./public/images/products/MM283.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./views/product_details.html" class="item">
+                                <div class="content-text">
+                                    <span class="text-secondary">CÒN HÀNG</span>
+                                    <h3>iPhone 13 ProMax</h3>
+                                    <p>Trả góp từ $ 999,00 hoặc $ 41,62 / tháng mỗi tháng trong 24 tháng. trước khi trade-inFootnote *</p>
+                                </div>
+                                <img src="./public/images/products/store-card-40-getready-202109_GEO_US.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./views/product_details.html" class="item">
+                                <div class="content-text">
+                                    <span class="text-secondary">CÒN HÀNG</span>
+                                    <h3>iPhone 13 ProMax</h3>
+                                    <p>Trả góp từ $ 999,00 hoặc $ 41,62 / tháng mỗi tháng trong 24 tháng. trước khi trade-inFootnote *</p>
+                                </div>
+                                <img src="./public/images/products/store-card-40-getready-202109_GEO_US.jpg" alt="">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- end featured-products (xem nhiều)-->
+
+            <div class="help">
+                <div class="title">
+                    <h3>Bạn cần giúp. <span class="text-secondary">
+                        Bất cứ khi nào và bất cứ khi nào bạn cần.</span></h3>
+
+                </div>
+                <div class="content-help">
+                    <a href="#" class="item">
+                        <h3 class="">Shop one on one with a Specialist. Online or in store.</h3>
+                        <img src="./public/images/layout/store-card-50-specialist-202108.jpg" alt="">
+                    </a>
+                    <div class="item2">
+                        <a href="#" class="item-small">
+                            <h4>Get to know your new device with a free Personal Session.</h4>
+                            <img src="./public/images/layout/store-card-25-apps-202108.jpg" alt="" width="">
+
+                        </a>
+                        <a href="#" class="item-small card">
+                            <h4>Get to know your new device with a free Personal Session.</h4>
+                            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-25-genius-202108?wid=960&hei=480&fmt=p-jpg&qlt=95&.v=1626384443000"
+                                alt="" width="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end help -->
+            <!-- tin tức -->
+            <div class="intro-product">
+                <div class="intro-text text-center">
+                    <img src="./public/images/layout/logo_watch.png" width="160px" class="mb-3" alt="">
+                    <p class="intro-dt">Full screen ahead.</p>
+                    <p class="text-secondary" style="font-size:18px;">Available later fall</p>
+                    <a href="" style="font-size: 18px">Discover <i class="fa fa-angle-right pl-2 "
+                            aria-hidden="true"></i>
+                </div>
+                <a href="#">
+                    <img src="./public/images/products/hero_lte__fbsea3yn8wy2_large_2x.jpg" alt="" width="100%"
+                        height="100%">
+                </a>
+
+                </a>
+            </div>
+            <!-- end intro-products -->
+            <div class="intro2-product">
+                <div class="item">
+                    <div class="intro-text text-center">
+                        <div class="text-danger" style="font-size: 17px;">
+                            Offer Ends 9/27
+                        </div>
+                        <h1>Buy a Mac or iPad for collage.Get AirPods</h1>
+                        <a href="">Save with education pricing<i class="fa fa-angle-right pl-2 "
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <img src="./public/images/products/ipad-mini1.jpg" alt="" width="100%">
+                </div>
+                <div class="item">
+                    <div class="intro-text text-center">
+                        <img src="./public/images/products/logo-ipadmini.png" width="25%" alt="">
+                        <h1>Buy a Mac or iPad for collage.Get AirPods</h1>
+                        <a href="">Save with education pricing<i class="fa fa-angle-right pl-2 "
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <img src="./public/images/products/ipad-mini2.jpg" alt="" width="100%">
+                </div>
+                <div class="item">
+                    <div class="intro-text text-center">
+                        <div class="text-danger" style="font-size: 17px;">
+                            Offer Ends 9/27
+                        </div>
+                        <h1>Buy a Mac or iPad for collage.Get AirPods</h1>
+                        <a href="">Save with education pricing<i class="fa fa-angle-right pl-2 "
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <img src="./public/images/products/promo_imac__crg641tip4q6_large_2x.jpg" alt="" width="100%">
+                </div>
+                <div class="item">
+                    <div class="intro-text text-center">
+                        <div class="text-danger" style="font-size: 17px;">
+                            Offer Ends 9/27
+                        </div>
+                        <h1>Buy a Mac or iPad for collage.Get AirPods</h1>
+                        <a href="">Save with education pricing<i class="fa fa-angle-right pl-2 "
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <img src="./public/images/products/tile_apple_fitness_plus__em4a8tdthw4m_large_2x.jpg" alt=""
+                        width="100%">
+                </div>
+            </div>
+        </main>
+        <!-- end main -->
+        <footer>
+            <div class="footer-top pt-2 pb-2">
+                <a href="#"><i class="fa fa-apple mr-2 text-dark" aria-hidden="true"></i>
+                </a>
+                <i class="fa fa-angle-right mr-2 text-secondary" aria-hidden="true"></i>
+                <span>Apple Store</span>
+            </div>
+            <div class="footer-info mt-4">
+                <div class="item">
+                    <h6>Shop and Learn</h6>
+                    <ul>
+                        <li><a href="">Mac</a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">Iphone</a></li>
+                        <li><a href="">Watch</a></li>
+                        <li><a href="">TV</a></li>
+                        <li><a href="">Music</a></li>
+                        <li><a href="">AirPods</a></li>
+                        <li><a href="">HomePods</a></li>
+                        <li><a href="">iPod touch</a></li>
+                        <li><a href="">AirTag</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Gifts Cards</a></li>
+
+                    </ul>
+                </div>
+                <div class="item">
+                    <h6>Services</h6>
+                    <ul>
+                        <li><a href="">Apple Music</a></li>
+                        <li><a href="">Apple TV+</a></li>
+                        <li><a href="">Apple Fitness+</a></li>
+                        <li><a href="">Apple News+</a></li>
+                        <li><a href="">Apple Arcade</a></li>
+                        <li><a href="">iCloud</a></li>
+                        <li><a href="">Apple Card</a></li>
+                        <li><a href="">Apple One</a></li>
+                        <li><a href="">Apple Books</a></li>
+                        <h6 class="pt-3">Account</h6>
+                        <ul>
+                            <li><a href="">Manage Your Apple ID</a></li>
+                            <li><a href=""> Apple Store Account</a></li>
+                            <li><a href=""> iCloud.com</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h6>Apple Store</h6>
+                    <ul>
+                        <li><a href=""> Find a Store</a></li>
+                        <li><a href=""> Shop Online</a></li>
+                        <li><a href="">Genius Bar</a></li>
+                        <li><a href="">Today at Apple</a></li>
+                        <li><a href="">Apple Camp</a></li>
+                        <li><a href="">Apple Store App</a></li>
+                        <li><a href="">Refurbished and Clearance</a></li>
+                        <li><a href="">Financing</a></li>
+                        <li><a href="">Apple Trade In</a></li>
+                        <li><a href="">Order Status</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Shopping Help</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h6>For Bussiness</h6>
+                    <ul>
+                        <li><a href=""> Apple and Business</a></li>
+                        <li><a href=""> Shop for Business</a></li>
+                    </ul>
+                    <h6>For Education</h6>
+                    <ul>
+                        <li><a href=""> Apple and Education</a></li>
+                        <li><a href=""> Shop for K-12</a></li>
+                        <li><a href=""> Shop for College</a></li>
+                    </ul>
+                    <h6>For Healthcare</h6>
+                    <ul>
+                        <li><a href=""> Apple in Healthcare</a></li>
+                        <li><a href=""> Health on Apple Watch</a></li>
+                        <li><a href=""> Health Records on iPhone</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h6>Apple Values</h6>
+                    <ul>
+                        <li><a href="">Accessibility</a></li>
+                        <li><a href="">Education</a></li>
+                        <li><a href="">Environment</a></li>
+                        <li><a href=""> Inclusion and Diversity</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Racial Equity and Justice</a></li>
+                        <li><a href="">Supplier Responsibility</a></li>
+                    </ul>
+                    <h6>About Apple</h6>
+                    <ul>
+                        <li><a href="">Newsroom</a></li>
+                        <li><a href="">Apple Leadership</a></li>
+                        <li><a href="">Career Opportunities</a></li>
+                        <li><a href="">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="item-top text-center pb-2">
+                    <span>More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near
+                        you.
+                        Or call 1-800-MY-APPLE.</span>
+                </div>
+                <div class="item-bottom text-center pt-2">
+                    Copyright © 2021 Apple Inc. All rights reserved.
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <div class="back-to-top" title="Lên đầu trang"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+        <!-- end back to top -->
+    </div>
+
+    <!-- link jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- link js -->
+    <script src="./public/js/scroll.js"></script>
+    <!-- lib slider -->
+    <script src="./public/js/lib/lightslider.js"></script>
+    <!-- call slider fuction-->
+    <script>
+        $(document).ready(function () {
+            $("#content-slider").lightSlider({
+                loop: true,
+                keyPress: true
+            });
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="shortcut icon" type="" href="../public/images/favicon.ico" />
+
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/login.css">
+    <link rel="stylesheet" href="../public/css/register.css">
+</head>
+
+<body>
+    <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+        <div class="container">
+            <div class="card login-card">
+                <div class="row no-gutters">
+                    <div class="col-md-5">
+                        <img src="../public/images/layout/banner-apple2.png" alt="login"
+                            class="login-card-img">
+                    </div>
+                    <div class="col-md-7">
+                        <nav>
+                            <a href="../index.html"><i class="fa fa-home mr-2" aria-hidden="true"></i>Back to home</i>
+                            </a>
+                        </nav>
+                        <div class="card-body">
+                            
+                            <div class="brand-wrapper">
+                                <a href="" class="logo"><i class="fa fa-apple" aria-hidden="true"></i><span class="logo-txt">Apple</span>
+                                </a>
+                            </div>
+                            <p class="login-card-description">Đăng kí tài khoản</p>
+                            <form action="#!" method="POST">
+                                <div class="form-group">
+                                    <label for="fullname" class="sr-only">Tên đầy đủ</label>
+                                    <input type="text" name="fullname" id="fullname" class="form-control"
+                                        placeholder="Enter fullname" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="sr-only">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        placeholder="Email address">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="password" class="sr-only">Mật khẩu</label>
+                                    <input type="password" name="password" id="password" class="form-control"
+                                        placeholder="***********">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="re_password" class="sr-only">Nhập lại mật khẩu</label>
+                                    <input type="password" name="re_password" id="re_password" class="form-control"
+                                        placeholder="Re_password">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="avatar" class="sr-only">Ảnh đại diện</label>
+                                   <input type="file" class="form-control-file" placeholder="Tải ảnh lên" >
+                                </div>
+                                <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit"
+                                    value="Regiter">
+                            </form>
+                            <a href="#!" class="forgot-password-link">Quên mật khẩu ?</a>
+                            <p class="login-card-footer-text">Bạn đã từng đăng kí tài khoản? <a href="sign_in.html"
+                                    class="text-reset text-primary">Đăng nhập tại đây</a></p>
+                            <nav class="login-card-footer-nav">
+                                <a href="#!">Terms of use.</a>
+                                <a href="#!">Privacy policy</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
